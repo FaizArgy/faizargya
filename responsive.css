@@ -1,0 +1,246 @@
+@media only screen and (max-width : 991.98px ) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        z-index: 10;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-pic {
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 10em;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+    }
+
+    .intro {
+        padding: 30px; /* Mengurangi padding agar lebih kompak */
+        gap: 2em; /* Mengurangi jarak antar elemen */
+        flex-direction: column; /* Mengubah layout menjadi kolom */
+        text-align: center; /* Memusatkan teks untuk mobile */
+        min-height: auto; /* Mengurangi tinggi minumum agar sesuai layar kecil */
+        margin-top: 23em; /* Mengurangi margin atas */
+    }
+
+    .text h2 {
+        font-size: 40px; /* Mengurangi ukuran font untuk h2 */
+    }
+
+    .text p {
+        margin: 20px 0; /* Mengurangi margin untuk membuat tampilan lebih rapat */
+        font-size: 16px; /* Mengurangi ukuran font untuk teks */
+    }
+
+    button {
+        padding: 12px 24px; /* Memperbesar ukuran button agar mudah di-klik */
+        font-size: 16px; /* Menyesuaikan ukuran font button */
+    }
+
+
+
+
+    /* page 2 */
+
+
+    .about {
+        padding: 50px 0px; /* Mengurangi padding agar lebih proporsional */
+    }
+
+    .main {
+        flex-direction: column; /* Menyusun konten secara vertikal */
+        align-items: center; /* Memusatkan elemen-elemen */
+        justify-content: center;
+        gap: 2em; /* Mengurangi jarak antar elemen */
+        max-width: 90%; /* Membatasi lebar agar pas dengan layar */
+    }
+
+    .about-text h1 {
+        font-size: 35px; /* Mengurangi ukuran font untuk h1 */
+    }
+
+    .about-text h5 {
+        font-size: 18px; /* Menyesuaikan ukuran font untuk h5 */
+    }
+
+    .about-text {
+        font-size: 16px; /* Mengurangi ukuran font agar lebih sesuai dengan layar kecil */
+        margin-bottom: 30px; /* Mengurangi margin bawah */
+    }
+
+    /* page 3 */
+
+    .project-grid {
+        grid-template-columns:auto auto auto; /* Mengubah menjadi 1 kolom pada layar lebih kecil */
+        width: 100%;
+    }
+
+    .card img {
+        height: 140px; /* Mengurangi ukuran gambar lebih lanjut */
+    }
+
+    .card h3 {
+        font-size: 18px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    .card p {
+        font-size: 14px; /* Mengurangi ukuran font untuk deskripsi */
+    }
+
+
+    /* page skill */
+
+    .skill p {
+        font-size: 15px;
+    }
+
+    .skills-grid {
+        grid-template-columns: auto auto;
+        gap: 1em;
+    }
+
+    .skill-box {
+        height: 85%;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: start;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: 79%;
+        margin: 0;
+    }
+
+    .portfolio .card p {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .portfolio h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .card img {
+        box-sizing: 1px;
+    }
+
+
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: start;
+        padding: 20px;
+    }
+
+    .skill-box {
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact responsive */
+
+@media (max-width: 991px) {
+
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .container .contactInfo,
+    .container .contactForm {
+        width: 120%;
+    }
+
+    .container .contactForm {
+        padding: 50px;
+    }
+
+    .container .contactForm form {
+        padding: 10px;
+    }
+
+    
+}
